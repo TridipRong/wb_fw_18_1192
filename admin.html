@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<style>
+    input,
+    select {
+        display: block;
+        margin: 15px 0px;
+        font-size: 20px;
+        padding: 2%;
+    }
+
+    option {
+        font-size: 25px;
+    }
+
+    form {
+        width: 300px;
+        border: 1px solid rgb(230, 230, 230);
+        margin: 3% auto;
+        padding: 3%;
+        background: rgb(15, 14, 14);
+    }
+
+    #sub {
+        background-color: red;
+        color: aliceblue;
+        width: 80px;
+        height: 40px;
+        margin-top: 10px;
+        border: 1px solid greenyellow;
+    }
+
+    #sub:hover {
+        background-color: greenyellow;
+        color: black;
+    }
+</style>
+
+<body>
+    <form id="form">
+        <!--Product info-->
+        <input id="name" type="text" placeholder="Product Brand">
+        <input id="category" type="text" placeholder="Category">
+        <input id="image" type="url" placeholder="Img">
+        <input id="price" type="number" placeholder="Price">
+        <!--Product info-->
+        <!--gender-->
+        <select id="gender">
+            <option value="">Choose Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <!--gender end-->
+        <!--sell-->
+        <select id="sold">
+            <option value="false">false</option>
+            <option value="true">true</option>
+        </select>
+        <!--sell end-->
+
+        <button id="sub" value="submit">Submit</button>
+    </form>
+</body>
+
+</html>
+<script src="Ecom1.js"></script>
